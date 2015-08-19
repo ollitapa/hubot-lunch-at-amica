@@ -1,19 +1,19 @@
 {
-  "name": "hubot-hubot-lunch-at-amica",
+  "name": "hubot-lunch-at-amica",
   "description": "Tells you the lunch menu at Amica-restaurants in Finland",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "author": "Olli Tapaninen <ollitapa@gmail.com>",
-  "license": "MIT",
+  "license": "Apache-2.0",
 
-  "keywords": "hubot, hubot-scri�pts, lunch, amica, finland",
+  "keywords": "hubot, hubot-scripts, lunch, amica, finland",
 
   "repository": {
     "type": "git",
-    "url": "git://github.com/hubot-scripts/hubot-hubot-lunch-at-amica.git"
+    "url": "https://github.com/ollitapa/hubot-lunch-at-amica"
   },
 
   "bugs": {
-    "url": "https://github.com/hubot-scripts/hubot-hubot-lunch-at-amica/issues"
+    "url": "https://github.com/ollitapa/hubot-lunch-at-amica/issues"
   },
 
   "dependencies": {

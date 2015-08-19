@@ -2,17 +2,32 @@
 #   Tells you the lunch menu at Amica-restaurants in Finland
 #
 # Configuration:
-#   LIST_OF_ENV_VARS_TO_SET
 #
 # Commands:
-#   hubot hello - <what the respond trigger does>
-#   orly - <what the hear trigger does>
+#   hubot lunch|lounasta|ruokaa| <place> - Tells you the menu of today at place
+#   ruokaa(a*)- Tells you the menu at random place
 #
 # Notes:
-#   <optional notes required for the script>
+#
 #
 # Author:
 #   Olli Tapaninen <ollitapa@gmail.com>
+#
+
+# Copyright 2015 Olli Tapaninen
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
 
 Util = require "util"
 
@@ -36,6 +51,7 @@ module.exports = (robot) ->
 
 
   getLunch = (res, place) ->
+    # Method to get the lunch from JSON API at Amica
 
     url = "http://www.amica.fi/modules/json/json/Index?costNumber=#{place}&language=fi"
 
