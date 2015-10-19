@@ -69,9 +69,12 @@ module.exports = (robot) ->
 
         menuToday = stripMenu json for json in data["MenusForDays"] when json["Date"].setHours(1,0,0,0) is today.setHours(1,0,0,0)
 
+        response = ""
         for i in menuToday
-          res.send "-----------"
-          res.send i
+          response = response + "\n-----------"
+          response = response + "\n" + i
+
+        res.send response
 
 
 
