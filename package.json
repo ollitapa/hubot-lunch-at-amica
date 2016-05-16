@@ -1,7 +1,7 @@
 {
   "name": "hubot-lunch-at-amica",
   "description": "Tells you the lunch menu at Amica-restaurants in Finland",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "Olli Tapaninen <ollitapa@gmail.com>",
   "license": "Apache-2.0",
   "keywords": "hubot, hubot-scripts, lunch, amica, finland",
