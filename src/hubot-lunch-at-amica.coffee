@@ -89,7 +89,7 @@ module.exports = (robot) ->
 
   robot.respond /(.*)(lunch|lounasta|ruokaa) (\w*)+/i, (res)->
 
-    place = res.match[3]
+    place = res.match[3].toLowerCase()
 
     res.send "Today at #{place}:"
     res.send ""
@@ -107,7 +107,7 @@ module.exports = (robot) ->
 
   robot.hear /whats for lunch at (\w*)+/i, (res)->
 
-    place = res.match[1]
+    place = res.match[1].toLowerCase()
 
     res.send "Today at #{place}:"
     getLunch res, restaurants[place] if place of restaurants
