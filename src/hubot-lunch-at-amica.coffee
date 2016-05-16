@@ -40,6 +40,13 @@ restaurants =
         'smarthouse': 3498
         'vtt': 3587
         'vtt-oulu': 3587
+        'kara3': 3205
+        'karaportti3': 3205
+        'vtt-espoo': 3588
+        'micronova': 3588
+        'micro': 3588
+        'aalto': 3579
+        'vm5': 3579
 
 stripMenu = (json) ->
   menu = for item in json["SetMenus"]
